@@ -59,8 +59,8 @@
 (evil-define-key 'visual evil-dvorak-mode-map
   "h" 'evil-next-line
   "t" 'evil-previous-line
-  "n" 'evil-backward-char
-  "s" 'evil-forward-char
+  "d" 'evil-backward-char
+  "n" 'evil-forward-char
   ;;I what to be able to use vaw (visual around word) and viw (visual inner word)
   ;; that's why in visual mode, u and a are not defined.
   ;; BUT it would be cool to say cie and mean change forward to word-end
@@ -72,10 +72,10 @@
 
 (evil-define-key 'normal evil-dvorak-mode-map
   ;; Miscellancus
-  (kbd "t") #'evil-next-line
-  (kbd "h") #'previous-line
-  (kbd "n") #'backward-char
-  (kbd "s") #'forward-char
+  (kbd "h") #'evil-next-line
+  (kbd "t") #'previous-line
+  (kbd "d") #'backward-char
+  (kbd "n") #'forward-char
   "k" 'kill-line
   "K" #'(lambda () (interactive)
           "kill from point to the beginning of the line"
