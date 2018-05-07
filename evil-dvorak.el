@@ -57,8 +57,8 @@
   "Global mode to let you use evil with dvorak friendly keybindings.")
 
 (evil-define-key 'visual evil-dvorak-mode-map
-  "t" 'evil-next-line
-  "h" 'evil-previous-line
+  "h" 'evil-next-line
+  "t" 'evil-previous-line
   "n" 'evil-backward-char
   "s" 'evil-forward-char
   ;;I what to be able to use vaw (visual around word) and viw (visual inner word)
